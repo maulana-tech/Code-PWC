@@ -1,0 +1,73 @@
+<html>
+<head>
+    <title>Data Buku</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 60%;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Daftar Buku</h1>
+    <table id="bookTable">
+        <tr>
+            <th>Judul</th>
+            <th>Penulis</th>
+            <th>Tahun Terbit</th>
+            <th>Harga</th>
+        </tr>
+    </table>
+
+    <script>
+        const books = [
+            { title: "JavaScript for Beginners", author: "Mary Smith", year: 2002, price: 150000 },
+            { title: "Belajar HTML", author: "Jack Doe", year: 2019, price: 120000 },
+            { title: "CSS Styling", author: "Lucy Brown", year: 2005, price: 100000 }
+        ];
+
+        function displayBooks() {
+            const table = document.getElementById('bookTable');
+
+            books.forEach(book => {
+                // Check if the book data is valid
+                if (book.title && book.author && book.year && book.price) {
+                    const row = table.insertRow();
+                    const cell1 = row.insertCell(0);
+                    const cell2 = row.insertCell(1);
+                    const cell3 = row.insertCell(2);
+                    const cell4 = row.insertCell(3);
+
+                    cell1.innerHTML = book.title;
+                    cell2.innerHTML = book.author;
+                    cell3.innerHTML = book.year;
+                    cell4.innerHTML = book.price;
+                }
+            });
+        }
+
+        displayBooks();
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Binatang dan Sayuran</title>
+</head>
+<body>
+    <h1>Array Binatang dan Sayuran</h1>
+    <div id="output"></div>
+
+    <script>
+        const binatang = ["Kucing", "Anjing", "Burung", "Kuda", "Sapi", "Kelinci"];
+        const sayuran = ["Bayam", "Wortel", "Kubis", "Tomat", "Labu", "Buncis"];
+
+        document.getElementById("output").innerHTML = `
+            <h2>Binatang:</h2>
+            ${binatang.join(", ")}
+            <h2>Sayuran:</h2>
+            ${sayuran.join(", ")}
+        `;
+    </script>
+</body>
+</html>

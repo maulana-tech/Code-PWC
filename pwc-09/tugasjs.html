@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perbandingan === dan ==</title>
+</head>
+<body>
+    <h1>Perbandingan `===` dan `==`</h1>
+    <p>Masukkan angka:</p>
+    <input type="text" id="userInput" placeholder="Masukkan angka">
+    <button onclick="compareValues()">Cek Perbandingan</button>
+    <div id="result" style="margin-top: 20px; font-weight: bold;"></div>
+
+    <script>
+        function compareValues() {
+            // Nilai ekspektasi
+            const expectedValue = 100; 
+
+            // Input pengguna
+            const userInput = document.getElementById("userInput").value; 
+
+            // Perbandingan
+            const strictComparison = (userInput === expectedValue); 
+            const looseComparison = (userInput == expectedValue);   
+
+            const resultDiv = document.getElementById("result");
+            resultDiv.innerHTML = `
+                <p>Input pengguna: <b>${userInput}</b></p>
+                <p>Perbandingan dengan <b>===</b>: ${strictComparison}</p>
+                <p>Perbandingan dengan <b>==</b>: ${looseComparison}</p>
+            `;
+        }
+    </script>
+</body>
+</html>

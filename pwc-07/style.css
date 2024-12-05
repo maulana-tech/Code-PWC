@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 80px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+}
+table, th, td {
+    border: 1px solid #dddddd;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+img.product-image {
+    width: 100px; /* Adjust the size as needed */
+    height: auto;
+}
+@media (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    th, td {
+        padding: 10px;
+    }
+    th {
+        background-color: #f9f9f9;
+        font-size: 1.2em;
+        text-align: center;
+    }
+    td {
+        text-align: center;
+        border: none;
+        border-bottom: 1px solid #eeeeee;
+    }
+    tr {
+        margin-bottom: 10px;
+    }
+    img.product-image {
+        width: 80%; /* Adjust the size for smaller screens */
+    }
+}

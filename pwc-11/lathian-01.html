@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Mahasiswa Baru</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 400px;
+            margin: auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+        }
+        button:hover {
+            background-color: #45a049;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Form Pendaftaran Mahasiswa Baru</h2>
+    <form action="/submit" method="post">
+        <!-- Nama -->
+        <label for="nama">Nama Lengkap</label>
+        <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+        
+        <!-- Alamat -->
+        <label for="alamat">Alamat</label>
+        <input type="text" id="alamat" name="alamat" placeholder="Masukkan alamat" required>
+        
+        <!-- Email -->
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Masukkan email" required>
+        
+        <!-- No Telepon -->
+        <label for="no_telepon">No Telepon</label>
+        <input type="tel" id="no_telepon" name="no_telepon" placeholder="Masukkan no telepon" required>
+        
+        <!-- Jenis Kelamin -->
+        <label for="jenis_kelamin">Jenis Kelamin</label>
+        <select id="jenis_kelamin" name="jenis_kelamin" required>
+            <option value="" disabled selected>Pilih jenis kelamin</option>
+            <option value="Laki-laki">Laki-laki</option>
+            <option value="Perempuan">Perempuan</option>
+        </select>
+        
+        <!-- Tombol Submit -->
+        <button type="submit">Daftar</button>
+    </form>
+</body>
+</html>
+

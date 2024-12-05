@@ -1,0 +1,139 @@
+<html>
+  <head>
+    <title>Tugas 4</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+      .sub-header {
+        background-color: #8ea3f7;
+        text-align: center;
+        padding: 10px;
+        color: black;
+      }
+      .sub-header h2 {
+        margin: 0;
+      }
+      .sub-header p {
+        margin: 0;
+      }
+
+      .nav {
+        background-color: #667b9e;
+        text-align: center;
+        padding: 10px;
+      }
+
+      .nav a {
+        color: #ffffff;
+        margin: 0 15px;
+        text-decoration: none;
+        font-size: 15px;
+        position: relative;
+        display: inline-block;
+        transition: color 0.3s ease;
+      }
+
+      /* Hover effect */
+      .nav a:hover {
+        color: #100c4e;
+      }
+
+      /* Underline effect on hover */
+      .nav a::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #20164f;
+        left: 0;
+        bottom: -5px;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.3s ease;
+      }
+
+      .nav a:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
+
+      /* Smooth appearing animation for navbar */
+      .nav {
+        animation: slideDown 1s ease;
+      }
+
+      @keyframes slideDown {
+        from {
+          transform: translateY(-100%);
+        }
+        to {
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="header"
+      style="background-color: #070f5c; text-align: center; padding: 20px"
+    >
+      <h1 style="color: #ffffff; font-size: 36px; margin: 0">
+        TUGAS PRAKTIKUM 4
+      </h1>
+      <p style="color: #e9bf8d; font-size: 18px; margin: 0">
+        Ini menggunakan inline CSS
+      </p>
+    </div>
+
+    <div class="sub-header">
+      <h2>Muhammad Maulana Firdaussyah</h2>
+      <p>233310013</p>
+      <p>header dan navigasi ini menggunakan Internal CSS</p>
+    </div>
+
+    <div class="nav">
+      <a href="#"> pertemuan 1 </a>
+      <a href="#"> pertemuan 2 </a>
+      <a href="#"> pertemuan 3 </a>
+    </div>
+
+    <div class="content">
+      <div>
+        <h3>materi pertemuan 1</h3>
+        <p>membahas tentang :</p>
+        <p>1. Menggunakan editor</p>
+        <p>2. Menulis script HTML</p>
+      </div>
+
+      <div>
+        <h3>materi pertemuan 2</h3>
+        <p>membahas tentang :</p>
+        <p>1. Tag dasar HTML</p>
+        <p>2. Menulis script hyperlink</p>
+        <p>3. Menulis script list</p>
+      </div>
+
+      <div>
+        <h3>materi pertemuan 3</h3>
+        <p>membahas tentang :</p>
+        <p>1. Menulis CSS</p>
+        <p>2. Menulis selector</p>
+        <p>3. Menulis style</p>
+      </div>
+
+      <div>
+        <h3>materi pertemuan 4</h3>
+        <p>membahas tentang :</p>
+        <p>1. Menulis konten dengan CSS</p>
+        <p>2. Mengatur margin, padding dan border</p>
+        <p>3. Positioning konten</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <img alt="University logo" height="50" src="download.png" width="50" />
+      <p>Universitas Teknologi Digital Indonesia</p>
+      <p>SISTEM INFORMASI AKUNTANSI</p>
+      <p>©2024-MAULANA F.. All Rights Reserved</p>
+    </div>
+  </body>
+</html>

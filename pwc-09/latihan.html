@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kalkulator Mini</title>
+    <script src="kalkulator.js"></script>
+</head>
+<body>
+    <h2>Kalkulator Mini</h2>
+    <label>Angka 1 :</label>
+    <input type="text" id="n1"/><br/><br/>
+    
+    <label>Angka 2 :</label>
+    <input type="text" id="n2"/><br/><br/>
+    
+    <label>Operator :</label>
+    <select id="operators">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">×</option>
+        <option value="/">÷</option>
+    </select><br/><br/>
+    
+    <button onclick="kalkulatorMini();">Hitung</button>
+    <p>Hasil:</p>
+    <input type="text" id="result" readonly/>
+</body>
+</html>

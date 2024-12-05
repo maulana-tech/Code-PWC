@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <p>Creating a JavaScript Object</p>
+
+        <p id="demo"></p>
+
+        <script>
+            var person = {
+                firstName: "Muhammad Maulana",
+                lastName: "Firdaussyah",
+                age: 21,
+                eyeColor: "Black",
+                major: "Sistem Informasis Akuntansi",
+                university: "Universitas Teknologi Digital Indonesia"
+            };
+            
+
+            document.getElementById("demo").innerHTML =
+                person.firstName + " " + person.lastName + " is " + 
+                person.age + " years old, studies " + 
+                person.major + " at " + person.university + ".";
+        </script>
+
+    </body>
+</html>
