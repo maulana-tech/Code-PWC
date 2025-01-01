@@ -3,45 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preview CSS</title>
+    <title>Kuliner Yogyakarta</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
 </head>
 <body>
     <div class="wrapper">
-        <header>
-            <h1>Website Header</h1>
+        <header class="header">
+            <div class="header-content">
+                <h1 class="site-title">Kuliner Yogyakarta</h1>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html" class="current">Beranda</a></li>
+                        <li><a href="kuliner.html">Kuliner</a></li>
+                        <li><a href="tokoOleh.html">Toko Oleh-oleh</a></li>
+                        <li><a href="tentang.html">Tentang</a></li>
+                        <li><a href="kontak.html">Kontak</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
-        <nav>
-            <ul>
-                <li><a href="#" class="current">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <section class="utama">
-            <article>
-                <hgroup>
-                    <h2>Main Article Title</h2>
-                    <h3>Subtitle of the Article</h3>
-                </hgroup>
-                <p>This is the main content of the article. It is styled with the CSS provided.</p>
-                <figure>
-                    <img src="images/example.jpg" alt="Example Image" width="290" height="220">
-                    <figcaption>Figure Caption</figcaption>
-                </figure>
-            </article>
-        </section>
-        <aside>
-            <section> 
-                <h2>Sidebar Title</h2>
-                <a href="#">Sidebar Link 1</a>
-                <a href="#">Sidebar Link 2</a>
-                <a href="#">Sidebar Link 3</a>
+        
+        <main class="main-content">
+            <section class="featured-dishes">
+                <article class="dish-card">
+                    <div class="dish-image">
+                        <img src="img/gudeg.jpg" alt="Gudeg Jogja">
+                        <div class="dish-caption">Gudeg Jogja</div>
+                    </div>
+                    <div class="dish-content">
+                        <h2>Gudeg Jogja</h2>
+                        <h3>Makanan Khas Jogja</h3>
+                        <p>Gudeg merupakan makanan khas Jogja yang terbuat dari nangka muda dan menggunakan santan yang sangat kental. Hidangan ini dimasak dengan penuh kesabaran hingga menghasilkan cita rasa yang khas.</p>
+                    </div>
+                </article>
+
+                <article class="dish-card">
+                    <div class="dish-image">
+                        <img src="img/Sate Klathak.jpg" alt="Sate Klathak">
+                        <div class="dish-caption">Sate Klathak</div>
+                    </div>
+                    <div class="dish-content">
+                        <h2>Sate Klathak Jogja</h2>
+                        <h3>Makanan Sate Khas Jogja</h3>
+                        <p>Sate Klathak merupakan salah satu makanan khas Jogja, dengan olahan daging kambing pilihan yang dibakar tanpa kecap. Rasanya yang autentik menjadikannya favorit wisatawan.</p>
+                    </div>
+                </article>
             </section>
-        </aside>
-        <footer>
-            <p>&copy; 2024 Your Website Name. All rights reserved.</p>
+
+            <aside class="sidebar">
+                <section class="popular-recipes">
+                    <h2>Kuliner Populer</h2>
+                    <div class="popular-links">
+                        <a href="https://id.wikipedia.org/wiki/Kopi_Jos">Kopi Jos</a>
+                        <a href="#">Rujak Jogja</a>
+                        <a href="#">Nasi Uduk Jogja</a>
+                        <a href="#">Loki Cafe</a>
+                    </div>
+                </section>
+
+                <section class="contact-details">
+                    <h2>Kontak</h2>
+                    <div class="contact-info">
+                        <p>Kuliner Yogyakarta</p>
+                        <p>WhatsApp: 0821346572</p>
+                    </div>
+                </section>
+            </aside>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2024 Kuliner Yogyakarta. All rights reserved.</p>
         </footer>
     </div>
 </body>
